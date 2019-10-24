@@ -453,6 +453,7 @@ article.benefits:last-of-type {
 
 .basic {
     border-color: #FB3B64;
+    position: relative;
 }
 
 .basic p:nth-child(2) {
@@ -491,6 +492,7 @@ article.benefits:last-of-type {
     box-shadow: 5px 10px 27px #07ACE629;
     width: 405px;
     height: 500px;
+    position: relative;
 }
 
 .professional p:nth-child(2) {
@@ -526,13 +528,215 @@ article.benefits:last-of-type {
 
 .premium {
     border-color: #55DFB4;
+    position: relative;
 }
 
 .premium p:nth-child(2) {
     color: #55DFB4;
 }
+.buttonBegin {
+    display: block;
+    width: 150px;
+    height: 50px;
+    font-family: open-sans, sans-serif;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 23px;
+}
 
+.buttonBegin a {
+    text-decoration: none;
+    color: white;
+}
 
+.basic span {
+    background-color: #EB476E;
+    border-color: #EB476E;
+    position: absolute;
+    bottom: -25px;
+    left: 111px;
+}
+
+.professional span {
+    background-color: #07ACE6;
+    border-color: #07ACE6;
+    position: absolute;
+    bottom: -25px;
+    left: 127px;
+}
+
+.premium span {
+    background-color: #55DFB4;
+    border-color: #55DFB4;
+    position: absolute;
+    bottom: -25px;
+    left: 111px;
+}
+
+.contactForm {
+    display: flex;
+    justify-content: space-between;
+    width:896px;
+    height: 376px;
+    margin: 0 auto;
+}
+
+div.contact h1 {
+    font-family: Raleway, sans-serif;
+    font-size: 49px;
+    font-weight: 400;
+    margin-bottom:22px;
+}
+
+div.contact p:first-of-type {
+    font-family: Open-sans, sans-serif;
+    font-size: 16px;
+    margin-bottom:42px;
+}
+
+div.contact div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.contactMail, div.contactPhone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Open-sans, sans-serif;
+    font-size: 16px;
+    font-weight:600;
+    color: #A5A5A5;
+    height: 27px;
+}
+div.contactImage {
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 27px;
+}
+
+div.contactMail div.contactImage {
+    background-image: url('images/Mail Icon.svg');
+}
+
+div.contactPhone div.contactImage {
+    background-image: url('images/Phone Icon.svg');
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+form label {
+    font-family: "open sans", sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #08A6E4;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#name, #mail {
+    appearance: none;
+    display: block;
+    height: 57px;
+    width: 440px;
+    border: none;
+    border-bottom: 1px solid #A5A5A5;
+}
+
+.agreement {
+    width: 440px;
+    height: 108px;
+    margin-top: 30px;
+}
+
+button {
+    position     : absolute;
+    right: 0;
+    width: 226px;
+    height: 57px;
+    background-color: #08A6E4;
+    border-radius: 35px;
+    box-shadow: 5px 10px 14px #07ACE629;
+    color: white;
+    margin-top: 20px;
+}
+
+.agreement span {
+    position: absolute;
+}
+
+.agreement span {
+    font-family: open-sans, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #707070;
+    right: 0;
+    width: 405px;
+}
+
+#checked {
+    -webkit-appearance: none;
+    border: 1px solid #95989A;
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    background:none;
+    position: relative;
+}
+#checked:checked::after {
+    content:url("images/Checkmark.svg");
+    position: absolute;
+    left: 6px;
+    top: 4px;
+}
+
+footer {
+    width: 100vw;
+    height: 89px;
+    background-color: #F7F7F7;
+    box-shadow: 0 -5px 40px #00000029;
+    margin-top: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 137px;
+    padding-right: 136px;
+}
+.footerLogo {
+    font-family: Raleway, sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    color:#08A6E4;
+}
+
+.copyrights {
+    font-family: Open-sans, sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    color: #A5A5A5;
+    margin-top: 6px;
+}
+
+.twitter {
+    background-image: url("images/Twitter.svg");
+    margin-right: 20px;
+}
+
+.facebook {
+    background-image: url("images/Facebook.svg");
+}
+.twitter, .facebook {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
 
 
 
